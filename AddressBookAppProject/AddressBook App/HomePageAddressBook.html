@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HomePageAddressBook.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;&display=swap" rel="stylesheet">
+    <title>Address Book Form</title>
+    <script defer src="HomePageAddressBook.js"></script>
+</head>
+<body>
+    <header class="header-content header">
+        <div class="logo_content">
+            <img class="header-logo" src="logo.png" alt="">
+            <div>
+                <span class="add-text">ADDRESS</span><br>
+                <span class="book-text">BOOK</span><br>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="header-content header">
+            <span class="person-text">Person Details</span>
+            <span class="addressBookCount">10</span>
+            <span><a href="FormPageAddressBook.html" class="add-button">
+                <img src="addUser.png"></a>
+                <span><br></span>
+                <span><br></span>
+        </div>
+        <table id="display" class="table">
+            <tr>
+                <th>Full Name</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip Code</th>
+                <th>Phone Number</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+            <td>Mujeeb</td>
+            <td>Chembur Mumbai Mahrashtra</td>
+            <td>Mumbai</td>
+            <td>Mahrashtra</td>
+            <td>400089</td>
+            <td>+919090909090</td>
+            <td>
+                <img class="delete1" id="1" onclick="remove(this)" alt="delete" src="delete_icon.jpg">
+                <img class="edit1" id="1" alt="edit" onclick="update(this)" src="edit_icon.jpg">
+            </td>
+        </tr>
+        </table>
+    </div>
+</body>
+</html>

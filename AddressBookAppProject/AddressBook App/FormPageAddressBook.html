@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FormPageAddressBook.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;&display=swap" rel="stylesheet">
+    <title>Address Book Form</title>
+    <script src="FormPageAddressBookForm.js"></script>
+</head>
+
+<body>
+    <header class="header-content header">
+        <div class="logo_content">
+            <img class="header-logo" src="logo.png" alt="">
+            <div>
+                <span class="add-text">ADDRESS</span><br>
+                <span class="book-text">BOOK</span><br>
+            </div>
+        </div>
+    </header>
+    <div id="formId" class="form-content">
+        <form class="form" action="HomePageAddressBook.html" onreset="resetForm()" onsubmit="save()">
+            <div class="form-head">
+                <span></span><br>
+                <span></span><br>
+                <span class="person-text">PERSON ADDRESS FORM</span>
+                <span><a href="HomePageAddressBook.html" class="cancel-button">
+                    <img src="cancel.png">
+                </a></span>
+            </div>
+            <div class="row-content">
+                <span></span><br>
+                <span>
+                    <error-output class="text-error" for="text"></error-output>
+                </span>
+                <span></span><br>
+                <span></span><br>
+                <span></span><br>
+                <span></span><br>
+                <label class="label-name" for="name">Full Name</label><br>
+                <input class="input-name" type="text" id="name" name="name" placeholder="Your Name.." required>
+            </div>
+            <div class="row-content">
+                <input class="input-address" type="text" id="address" name="address" placeholder="Address" required>
+                <error-output class="text-error" for="text"></error-output>
+                <span></span><br>
+                <span></span><br>
+                <span></span><br>
+                <span></span><br>
+            </div>
+            <div class="select-option">
+                <select class="select-city" name="city" id="city" required>City>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Kolkata">Kolkata</option>
+            </select >
+                <select class="select-state" name="state" id="state" required>State>
+                <option value="Mahrashtra">Mahrashtra</option>
+                <option value="UP">UP</option>
+                <option value="MP">MP</option>
+            </select>
+            <input class="input-zip" type="number" id="zip" name="zip" placeholder="Your Zip Code.." required>
+            <span></span><br>
+            <span></span><br>
+            <span></span><br>
+            <span></span><br>
+            </div>
+            <div>
+                <input class="input-phNum" type="text" name="Phone Number" id="phNum" placeholder="Number..">
+                <span></span><br>
+                <span></span><br>
+                <span></span><br>
+                <span></span><br>
+            </div>
+            <div class="add-reset">
+                <button class="button-submit" type="submit" class="submitButton" id="add">Add</button>
+                <button class="button-reset" type="reset" class="resetButton">Reset</button>
+            </div>
+</body>
+
+</html>
